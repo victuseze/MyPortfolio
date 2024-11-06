@@ -12,11 +12,12 @@ const Projects = () => {
       </h1> 
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>I have worked on a couple of projects, but these are the ones I hold closest to my heart.</p>
+        <p>I have worked on a couple of projects. Here are a few of them:</p>
       </div>
 
       <div className='flex flex-wrap my-20 gap-16'>
         {projects.map((project) => {
+          return(
           <div className='lg:w-[400px] w-full' key={project.name}>
             <div className='block-container w-12 h-12'>
               <div className={`btn-front rounded-xl ${project.theme}`} />
@@ -52,7 +53,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        } )}
+        )})}
       </div>
 
     <hr className='border-slate-200'/>

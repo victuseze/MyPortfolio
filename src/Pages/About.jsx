@@ -11,26 +11,32 @@ const About = () => {
       </h1> 
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>AR/VR and Frontend developer based in Lagos Nigeria. I build using Unity game engine, Meta spark studio, blender, iClone, Javascript, C#, ReactJs, CSS. I'm deep into tech experimentation and building</p>
+        <p> An extended reality (XR) developer passionate about leveraging immersive technologies to drive change and enhance learning experiences. With a solid foundation in XR development, my work focuses on creating educational VR and AR applications, with a specific interest in accessibility and inclusion.</p>
+        <br />
+        <p>From designing interactive VR environments to building AR tools for classroom engagement, I blend technical skill with an educational focus to make impactful solutions. My goal is to continue advancing XR applications in education and beyond, crafting accessible, meaningful experiences that bridge technology and human needs.</p>
       </div>
 
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text'>
           My Skills
         </h3>
-        {/* <div className='mt-16 flex flex-wrap gap-12'>
+        <div className='mt-16 flex flex-wrap gap-10'>
           {skills.map((skill) => (
             <div className='block-container w-20 h-20'>
-              <div className='btn-back rounded-xl' />
+              <div className='btn-back rounded-xl mt-5' />
               <div className='btn-front rounded-xl flex justify-center items-center'>
                 <img 
                   src={skill.imageUrl}
                   alt={skill.name}
-                  className='w=1/2 h-1/2 object-contain' />
+                  className='w=1/2 h-1/2 object-contain' 
+                  />
+              </div>
+              <div className='mt-20 text-center'>
+                <h1>{skill.name}</h1>
               </div>
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
        
       <div className='py-16'>
@@ -42,14 +48,15 @@ const About = () => {
           <div className='mt-12 flex'> 
             <VerticalTimeline>
               {experiences.map((experience) => {
+                return(
                 <VerticalTimelineElement
                   key={experience.company_name}
                   date={experience.date}
                   icon={<div>
                     <img 
-                      src=""
-                      alt="" 
-                      className='w-[60%] h-[60%] object-contain'
+                      src= {experience.icon}
+                      alt="Company's Logo" 
+                      className='w-[5%] h-[5%] object-contain'
                     />
                   </div>}
                   iconStyle={{
@@ -70,15 +77,15 @@ const About = () => {
                       {experience.company_name}
                     </p>
                   </div>
-                  {/* <ul className='my-5 list-disc ml-5 space-y-2'>
+                  <ul className='my-5 list-disc ml-5 space-y-2'>
                     {experience.points.map((point, index) => {
-                      <li key={`experience-point-${index}`} className='text-black-500/50 font-normal pl-1 text-sm'>
+                      return <li key={`experience-point-${index}`} className='text-black-500/50 font-normal pl-1 text-sm'>
                         {point}
                       </li>
                     })}
-                  </ul> */}
+                  </ul>
                 </VerticalTimelineElement>
-              })}
+              )})}
             </VerticalTimeline>
           </div>
       </div>

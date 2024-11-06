@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { meta, shopify, starbucks, tesla, imisilogo, freelancer, upwork } from "../assets/images";
 import {
     car,
     contact,
@@ -23,19 +23,29 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    csharp, 
+    blendersvg,
+    unitysvg,
+    treejs,
+    bar
 } from "../assets/icons";
 
 export const skills = [
     {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
+        imageUrl: unitysvg,
+        name: "Unity",
+        type: "Game Engine",
     },
     {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
+        imageUrl: blendersvg,
+        name: "Blender",
+        type: "Modeling",
+    },
+    {
+        imageUrl: csharp,
+        name: "C#",
+        type: "VR",
     },
     {
         imageUrl: git,
@@ -48,6 +58,11 @@ export const skills = [
         type: "Version Control",
     },
     {
+        imageUrl: treejs,
+        name: "TreeJS",
+        type: "Web XR",
+    },
+    {
         imageUrl: html,
         name: "HTML",
         type: "Frontend",
@@ -56,31 +71,6 @@ export const skills = [
         imageUrl: javascript,
         name: "JavaScript",
         type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
     },
     {
         imageUrl: react,
@@ -93,8 +83,8 @@ export const skills = [
         type: "State Management",
     },
     {
-        imageUrl: sass,
-        name: "Sass",
+        imageUrl: css,
+        name: "CSS",
         type: "Frontend",
     },
     {
@@ -111,55 +101,54 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        title: "XR Developer",
+        company_name: "Freelance",
+        icon: freelancer,
+        iconBg: "#fbc3bc",
+        date: "Oct 2024 - Nov 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Scene and level design of a VR Automechanic workshop",
+            "Modeling and retouching of some assets needed in the VR Auto Workshop using Blender",
+            "Interactive Development of the VR Auto Workshop using Unity Game-Engine and C# for scripting.",
+        ],
+    },
+    {
+        title: "XR Developer (VR) - Intern",
+        company_name: "Imisi3D",
+        icon: imisilogo,
+        iconBg: "#accbe1",
+        date: "April 2024 - Oct  2024",
+        points: [
+            "Collaborated with the team to Integrate a Large Language Model (LLM) into a VR project",
+            "Implementation of Speech-To-Text and Text-To-Speech API",
+            "Scene and UI design review",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        title: "XR Developer (AR) - Intern",
+        company_name: "Imisi3D",
+        icon: imisilogo,
+        iconBg: "#accbe1",
+        date: "April 2024 - Oct  2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Design and modeling of a 3D low poly rural environment in Blender that is to be used for an AR project to help tell stories about the Kidnapped Chibok Girls",
+            "Created a plane tracking AR project using Meta Spark Studio to tell the story of Chibok",
+            "Design and modeling of a Guinness Bar using Blender", "Created an AR application using Meta Spark Studio",
+            "Created a plane tracking AR application that displays the solar system using Unity AR Foundations_Core"
         ],
     },
     {
         title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        company_name: "Freelance",
+        icon: upwork,
         iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        date: "Sept 2022 - March 2024",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Implementing responsive design",
+            "Participating in code reviews",
         ],
     },
 ];
@@ -168,61 +157,62 @@ export const socialLinks = [
     {
         name: 'Contact',
         iconUrl: contact,
-        link: '/contact',
+        link: '+234-7038135121',
     },
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/victuseze',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/victus-eze-66b05b172/',
     }
 ];
 
 export const projects = [
     {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
         iconUrl: car,
+        theme: 'btn-back-red',
+        name: 'InGarage VR',
+        description: 'As an Automobile enthusiast, I designed and developed a VR an interactive automobile workshop using Blender and Unity',
+        link: 'https://youtu.be/vn0SuAaJEIA',
+    },
+    {
+        iconUrl: bar,
+        theme: 'btn-back-green',
+        name: 'Guinness Bar AR',
+        description: 'Modeled and developed an interactive AR Guinness Bar',
+        link: 'https://youtu.be/CUTUWzNOcU4',
+    },
+    {
+        iconUrl: mui,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'VR Entertainment Gallery',
+        description: 'Created an entertainment gallery where player can watch music video and also play different songs while having fun in the VR space',
+        link: 'https://youtu.be/_kb_RmGhHKI',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'XR BootCamp Project',
+        description: 'Built a First Person Controller (FPC) game where the player is being chased by a Robot if it is able to cast it rays on the player. Player can hide by entering into a box and also get the Robots killed using an explosive mine',
+        link: 'https://youtu.be/sZgjyKtx8TM',
+        
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Chibok AR',
+        description: 'Developed an AR project with the intention of telling the Chibok story',
+        link: 'https://youtube.com/shorts/DZfN5Bo8I4A',
     },
     {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+        iconUrl: estate,
+        theme: 'btn-back-red',
+        name: 'NPC VR',
+        description: 'Joined a team of Developers to create a VR project. My major contribution to the project was in the integration of LLM, Speech-To-Text and Text-To-Speech APIs',
+    },
+
 ];

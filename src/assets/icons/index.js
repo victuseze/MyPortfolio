@@ -26,6 +26,11 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import csharp from './csharp.svg'
+import blendersvg from './blendersvg.svg'
+import unitysvg from './unitysvg.svg'
+import treejs from './treejs.svg'
+import bar from './bar.svg'
 
 export {
     css,
@@ -55,5 +60,10 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    csharp,
+    blendersvg,
+    unitysvg,
+    treejs,
+    bar
 }
