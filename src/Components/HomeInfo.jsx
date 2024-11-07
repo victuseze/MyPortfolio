@@ -33,11 +33,11 @@ const renderContent = {
         />
     ),
     3: (
-        <InfoBox 
-        text= "Successfully built multiple Augmented and Virtual Reality experiences"
-        link="/projects"
-        btnText="Learn More"
-    />
+        <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
+            Hi, I'm <span className='font-semibold'>Victus</span>'👋
+            <br />
+            AR/VR/Game Developer from Lagos, Nigeria.
+        </h1>
     ),
     4: (
         <InfoBox 
