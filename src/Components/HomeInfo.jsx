@@ -20,32 +20,11 @@ const InfoBox = ({text, link, btnText}) => {
 const renderContent = {
     1: (
         <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
-            Hi, I'm <span className='font-semibold'>Victus</span>'👋
+            Hi, I'm <span className='font-semibold'>Victus</span>👋
             <br />
-            AR/VR/Game Developer from Lagos, Nigeria.
+            AR/VR/Game Developer based in Lagos, Nigeria.
         </h1>
-    ),
-    2: (
-        <InfoBox 
-            text= "Successfully built multiple Augmented and Virtual Reality experiences"
-            link="/about"
-            btnText="Learn More"
-        />
-    ),
-    3: (
-        <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
-            Hi, I'm <span className='font-semibold'>Victus</span>'👋
-            <br />
-            AR/VR/Game Developer from Lagos, Nigeria.
-        </h1>
-    ),
-    4: (
-        <InfoBox 
-        text= "Successfully built multiple Augmented and Virtual Reality experiences"
-        link="/contact"
-        btnText="Learn More"
-    />
-    ),
+    )
 }
 
 
@@ -58,9 +37,6 @@ const HomeInfo = ({currentStage}) => {
   )
 }
 
-// const HomeInfo = ({ currentStage }) => {
-//     return currentStage ? renderContent[currentStage] : null;
-//   };
   
 
 export default HomeInfo

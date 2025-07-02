@@ -1,10 +1,11 @@
 import React, { Suspense, useState, useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import emailjs from '@emailjs/browser';
-import Fox from '../models/Fox';
 import Loader from '../Components/Loader';
 import useAlert from '../hooks/useAlert';
 import Alert from '../Components/Alert'; 
+import VRhead from '../models/VRhead';
+import { OrbitControls } from '@react-three/drei';
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -93,21 +94,21 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative flex lg:flex-row flex-col max-container h-full lg:py-12 px-6 lg:px-12">
+    <section className="relative flex lg:flex-row flex-col max-container h-screen lg:py-12 px-6 lg:px-12">
       {/* Display the Alert component based on alert state */}
       {alert.show && <Alert {...alert} />}
 
       {/* Text and Form Section */}
       <div className="flex-1 min-w-[50%] flex flex-col lg:pr-12">
-        <h1 className="text-4xl font-bold text-gray-800 mb-8 lg:mb-12">Get In Touch</h1>
+        <h1 className="text-4xl font-bold text-white mb-8 lg:mb-12">Get In Touch</h1>
 
         <form className="w-full flex flex-col gap-7" onSubmit={handleSubmit}>
-          <label className="text-gray-700 font-semibold">
+          <label className="text-white font-semibold">
             Name
             <input
               type="text"
               name="name"
-              className="input p-4 border border-gray-300 rounded-lg focus:border-blue-500"
+              className="input p-4 border border-white rounded-lg focus:border-blue-500"
               placeholder="John"
               required
               value={form.name}
@@ -116,7 +117,7 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className="text-gray-700 font-semibold">
+          <label className="text-white font-semibold">
             Email
             <input
               type="email"
@@ -130,7 +131,7 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className="text-gray-700 font-semibold">
+          <label className="text-white font-semibold">
             Your message
             <textarea
               name="message"
@@ -158,22 +159,19 @@ const Contact = () => {
       <div className="lg:w-1/2 w-full lg:h-auto h-[350px] mt-12 lg:mt-0 lg:ml-12">
         <Canvas
           camera={{
-            position: [0, 0, 5],
+            position: [0, 0, 1],
             fov: 75,
             near: 0.1,
             far: 1000,
           }}
-          className="rounded-lg shadow-lg"
         >
-          <directionalLight intensity={2.5} position={[0, 0, 1]} />
-          <ambientLight intensity={0.5} />
+          <directionalLight intensity={8.5} position={[0, 0, 0.5]} />
+          {/* <ambientLight intensity={0.5} /> */}
           <Suspense fallback={<Loader />}>
-            <Fox
-              currentAnimation={currentAnimation}
-              position={[0.5, 0.35, 0]}
-              rotation={[-12.6, -0.6, 0]}
-              scale={[0.5, 0.5, 0.5]}
+            <OrbitControls 
+             autoRotate autoRotateSpeed={2}
             />
+            <VRhead />
           </Suspense>
         </Canvas>
       </div>

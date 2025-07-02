@@ -7,7 +7,7 @@ import CTA from '../Components/CTA';
 const Projects = () => {
   return (
   <section className='max-container'>
-      <h1 className='head-text'>
+      <h1 className='head-text text-white'>
         My <span className='blue-gradient_text font-semibold drop-shadow'>Project</span>
       </h1> 
 
@@ -30,7 +30,7 @@ const Projects = () => {
             </div>
 
             <div className='mt-5 flex flex-col'>
-              <h4 className='text-2xl font-poppins font-semibold'>
+              <h4 className='text-2xl font-poppins font-semibold text-white'>
                 {project.name}
               </h4>
               <p className='mt-2 text-slate-500'>

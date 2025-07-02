@@ -3,16 +3,17 @@ import { Canvas } from '@react-three/fiber';
 import Loader from '../Components/Loader';
 import HomeInfo from '../Components/HomeInfo';
 
-import Island from '../models/Island';
-import Sky from '../models/Sky';
-import Bird from '../models/Bird';
-import Plane from '../models/Plane';
-
-import Unstoppable from '../assets/Unstoppable.mp3';
+//import Unstoppable from '../assets/Unstoppable.mp3';
+import Baddoo from '../assets/Metaverse.mp3';
 import { soundoff, soundon } from '../assets/icons';
+import { AppleVisionPro } from '../models/AppleVisionPro';
+
+import { OrbitControls } from '@react-three/drei';
+import Skybox from '../models/Skybox';
+
 
 const Home = () => {
-    const audioRef = useRef(new Audio(Unstoppable));
+    const audioRef = useRef(new Audio(Baddoo));
     audioRef.current.volume = 0.9;
     audioRef.current.loop = true;
 
@@ -70,7 +71,7 @@ const Home = () => {
     const [planeScale, planePosition] = adjustPlaneForScreenSize();
 
     return (
-        <section className="w-full h-screen relative">
+        <section className="w-full h-screen">
             {/* Overlay for starting audio */}
             {showPlayOverlay && (
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center z-20">
@@ -88,34 +89,33 @@ const Home = () => {
             </div>
 
             <Canvas
+
                 className={`w-full h-screen bg-transparent ${isRotating ? "cursor-grabbing" : "cursor-grab"}`}
-                camera={{ near: 0.1, far: 1000 }}
+                camera={{ position: [0, 0, 5], fov: 45, near: 0.1, far: 1000 }}
             >
                 <Suspense fallback={<Loader />}>
                     <directionalLight position={[1, 1, 1]} intensity={2} />
                     <ambientLight intensity={0.5} />
                     <hemisphereLight skycolor="#b1e1ff" groundColor="#000000" intensity={1} />
-
-                    <Bird />
-                    <Sky isRotating={isRotating} />
-                    <Island
-                        position={isLandPosition}
-                        scale={isLandScale}
-                        rotation={isLandRotation}
-                        isRotating={isRotating}
-                        setIsRotating={setIsRotating}
-                        setCurrentStage={setCurrentStage}
+                    
+                    <OrbitControls
+                    //enableZoom={true}
+                    //enablePan={true}
+                    enableRotate={true}
+                    autoRotate={true}
+                    autoRotateSpeed={2} // slow speed (adjust as needed)
                     />
-                    <Plane
-                        isRotating={isRotating}
-                        position={planePosition}
-                        scale={planeScale}
-                        rotation={[0, 20, 0]}
+
+                    <Skybox is Rotating={isRotating}/>
+
+                    <AppleVisionPro 
+                          position={[0, -0.5, 0]}
+                          scale={[4, 4, 4]}
                     />
                 </Suspense>
             </Canvas>
 
-            <div>
+            <div className="absolute bottom-5 left-5 z-10">
                 <img
                     src={!isPlayingMusic ? soundoff : soundon}
                     alt="sound"

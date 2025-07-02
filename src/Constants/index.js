@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla, imisilogo, freelancer, upwork } from "../assets/images";
+import { meta, shopify, starbucks, tesla, imisilogo, freelancer, upwork, queens } from "../assets/images";
 import {
     car,
     contact,
@@ -101,11 +101,23 @@ export const skills = [
 
 export const experiences = [
     {
+        title: "VR Developer",
+        company_name: "Queen's Tech Hub",
+        icon: queens,
+        iconBg: "#fbc3bc",
+        date: "March 2025 - Till Date",
+        points: [
+            "Developed real-time VR Interior design applications for real estate firm",
+            "Designed and developed optimezed VR game applications",
+            "Developed VR storytelling dialogue experience"
+        ],
+    },
+    {
         title: "XR Developer",
         company_name: "Freelance",
         icon: freelancer,
         iconBg: "#fbc3bc",
-        date: "Oct 2024 - Nov 2024",
+        date: "Oct 2024 - Feb 2025",
         points: [
             "Scene and level design of a VR Automechanic workshop",
             "Modeling and retouching of some assets needed in the VR Auto Workshop using Blender",
@@ -173,8 +185,22 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: car,
+        iconUrl: estate,
+        theme: 'btn-back-blue',
+        name: 'Home Customization in VR',
+        description: 'A VR Interior Design application for real estate companies using Blender, C# and Unity',
+        link: 'https://youtu.be/6VDr0DXxkcY',
+    },
+    {
+        iconUrl: snapgram,
         theme: 'btn-back-red',
+        name: 'Buried Under Silence',
+        description: ' hidden grave and unspoken trauma storytelling in VR using Unity, C# and Blender',
+        link: 'https://youtube.com/shorts/_BxOkLkI1lI',
+    },
+    {
+        iconUrl: car,
+        theme: 'btn-back-pink',
         name: 'InGarage VR',
         description: 'As an Automobile enthusiast, I designed and developed a VR an interactive automobile workshop using Blender and Unity',
         link: 'https://youtu.be/vn0SuAaJEIA',

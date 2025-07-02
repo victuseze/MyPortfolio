@@ -7,6 +7,7 @@ import logo from './logo.svg'
 import imisilogo from './imisilogo.jpg'
 import upwork from './upwork.png'
 import freelancer from './freelancer.jpg'
+import queens from './queens.jpg'
 
 export {
     hero,
@@ -17,5 +18,6 @@ export {
     logo,
     imisilogo,
     upwork,
-    freelancer
+    freelancer,
+    queens
 }
