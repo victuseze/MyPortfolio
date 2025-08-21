@@ -203,7 +203,7 @@ export const projects = [
         theme: 'btn-back-pink',
         name: 'InGarage VR',
         description: 'As an Automobile enthusiast, I designed and developed a VR an interactive automobile workshop using Blender and Unity',
-        link: 'https://youtu.be/vn0SuAaJEIA',
+        link: 'https://youtu.be/_YKxDpQLG2k',
     },
     {
         iconUrl: bar,
