@@ -232,7 +232,7 @@ export const projects = [
         theme: 'btn-back-black',
         name: 'Chibok AR',
         description: 'Developed an AR project with the intention of telling the Chibok story',
-        link: 'https://youtube.com/shorts/DZfN5Bo8I4A',
+        link: 'https://vm.tiktok.com/ZSHnS5WQ7Sq6D-CaSg8/',
     },
     {
         iconUrl: estate,
