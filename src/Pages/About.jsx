@@ -11,7 +11,7 @@ const About = () => {
       </h1> 
 
       <div className='mt-5 flex flex-col gap-3 text-white'>
-        <p> I'm an Extended Reality (XR) developer passionate about leveraging immersive technologies to drive cultural change and enhance learning experiences. With a solid foundation in XR development, my work focuses on creating educational VR applications, storytelling, arts, training modules, immersive VR games, and AR applications, with a specific interest in accessibility and inclusion.</p>
+        <p> I'm an Extended Reality (XR) Developer and Visual Artist passionate about leveraging immersive technologies to drive cultural change and enhance learning experiences. With a solid foundation in XR development, my work focuses on creating educational VR applications, storytelling, arts, training modules, immersive VR games, and AR applications, with a specific interest in accessibility and inclusion.</p>
       </div>
 
       <div className='py-10 flex flex-col'>
