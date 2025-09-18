@@ -196,7 +196,7 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Buried Under Silence',
         description: ' hidden grave and unspoken trauma storytelling in VR using Unity, C# and Blender',
-        link: 'https://youtube.com/shorts/_BxOkLkI1lI',
+        link: 'https://youtu.be/8an11JfSVOc',
     },
     {
         iconUrl: car,
