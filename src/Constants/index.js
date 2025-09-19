@@ -185,18 +185,11 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: estate,
-        theme: 'btn-back-blue',
-        name: 'Home Customization in VR',
-        description: 'A VR Interior Design application for real estate companies using Blender, C# and Unity',
-        link: 'https://youtu.be/6VDr0DXxkcY',
-    },
-    {
         iconUrl: snapgram,
         theme: 'btn-back-red',
         name: 'Buried Under Silence',
-        description: ' hidden grave and unspoken trauma storytelling in VR using Unity, C# and Blender',
-        link: 'https://youtu.be/8an11JfSVOc',
+        description: ' Hidden graves and unspoken trauma storytelling in VR using Unity, C# and Blender',
+        link: 'https://youtube.com/shorts/SQYEyRJBuVM',
     },
     {
         iconUrl: car,
@@ -204,6 +197,27 @@ export const projects = [
         name: 'InGarage VR',
         description: 'As an Automobile enthusiast, I designed and developed a VR an interactive automobile workshop using Blender and Unity',
         link: 'https://youtu.be/_YKxDpQLG2k',
+    },
+    {
+        iconUrl: estate,
+        theme: 'btn-back-blue',
+        name: 'Property Virtual Tour',
+        description: 'Gousing property tour via virtual reality using Blender, C# and Unity',
+        link: 'https://vm.tiktok.com/ZSHntwRWVJyje-aCSaa/',
+    },
+    {
+        iconUrl: estate,
+        theme: 'btn-back-black',
+        name: 'AbductedChibok-Girls AR Experience',
+        description: 'Developed an AR project with the intention of telling the Chibok story',
+        link: 'https://vm.tiktok.com/ZSHnS5WQ7Sq6D-CaSg8/',
+    },
+    {
+        iconUrl: estate,
+        theme: 'btn-back-blue',
+        name: 'VR Home Customization',
+        description: 'A VR Interior Design application for real estate companies using Blender, C# and Unity',
+        link: 'https://youtu.be/6VDr0DXxkcY',
     },
     {
         iconUrl: bar,
@@ -226,13 +240,6 @@ export const projects = [
         description: 'Built a First Person Controller (FPC) game where the player is being chased by a Robot if it is able to cast it rays on the player. Player can hide by entering into a box and also get the Robots killed using an explosive mine',
         link: 'https://youtu.be/sZgjyKtx8TM',
         
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Chibok AR',
-        description: 'Developed an AR project with the intention of telling the Chibok story',
-        link: 'https://vm.tiktok.com/ZSHnS5WQ7Sq6D-CaSg8/',
     },
     {
         iconUrl: estate,
